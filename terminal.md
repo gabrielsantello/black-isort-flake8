@@ -84,3 +84,135 @@ Fixing C:\Users\gvsan\Documents\bootcamp\data-engineering-roadmap\black-isort-fl
 gvsan@Gabriel MINGW64 ~/Documents/bootcamp/data-engineering-roadmap/black-isort-flake8 (main)
 $ poetry run task format
 ```
+```
+gvsan@Gabriel MINGW64 ~/Documents/bootcamp/data-engineering-roadmap/black-isort-flake8 (main)
+$ poetry run pre-commit install
+pre-commit installed at .git\hooks\pre-commit
+```
+```
+gvsan@Gabriel MINGW64 ~/Documents/bootcamp/data-engineering-roadmap/black-isort-flake8 (main)
+$ git add .pre-commit-config.yaml
+```
+```
+gvsan@Gabriel MINGW64 ~/Documents/bootcamp/data-engineering-roadmap/black-isort-flake8 (main)
+$ git commit -m 'pre-commit sample'
+[WARNING] Unstaged files detected.
+[INFO] Stashing unstaged files to C:\Users\gvsan\.cache\pre-commit\patch1709069735-16816.
+[INFO] Initializing environment for https://github.com/pre-commit/pre-commit-hooks.
+[INFO] Initializing environment for https://github.com/psf/black-pre-commit-mirror.
+[INFO] Initializing environment for https://github.com/pycqa/isort.
+[INFO] Initializing environment for https://github.com/pycqa/flake8.
+[INFO] Installing environment for https://github.com/pre-commit/pre-commit-hooks.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+[INFO] Installing environment for https://github.com/psf/black-pre-commit-mirror.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+[INFO] Installing environment for https://github.com/pycqa/isort.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+[INFO] Installing environment for https://github.com/pycqa/flake8.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+trim trailing whitespace.............................(no files to check)Skipped
+fix end of files.....................................(no files to check)Skipped
+check yaml...........................................(no files to check)Skipped
+check toml...........................................(no files to check)Skipped
+detect private key...................................(no files to check)Skipped
+check for added large files..........................(no files to check)Skipped
+black................................................(no files to check)Skipped
+isort (python).......................................(no files to check)Skipped
+flake8...............................................(no files to check)Skipped
+[INFO] Restored changes from C:\Users\gvsan\.cache\pre-commit\patch1709069735-16816.
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   terminal.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+```
+gvsan@Gabriel MINGW64 ~/Documents/bootcamp/data-engineering-roadmap/black-isort-flake8 (main)
+$ git commit -m 'pre-commit sample'
+[WARNING] Unstaged files detected.
+[INFO] Stashing unstaged files to C:\Users\gvsan\.cache\pre-commit\patch1709069735-16816.
+[INFO] Initializing environment for https://github.com/pre-commit/pre-commit-hooks.
+[INFO] Initializing environment for https://github.com/psf/black-pre-commit-mirror.
+[INFO] Initializing environment for https://github.com/pycqa/isort.
+[INFO] Initializing environment for https://github.com/pycqa/flake8.
+[INFO] Installing environment for https://github.com/pre-commit/pre-commit-hooks.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+[INFO] Installing environment for https://github.com/psf/black-pre-commit-mirror.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+[INFO] Installing environment for https://github.com/pycqa/isort.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+[INFO] Installing environment for https://github.com/pycqa/flake8.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+trim trailing whitespace.............................(no files to check)Skipped
+fix end of files.....................................(no files to check)Skipped
+check yaml...........................................(no files to check)Skipped
+check toml...........................................(no files to check)Skipped
+detect private key...................................(no files to check)Skipped
+check for added large files..........................(no files to check)Skipped
+black................................................(no files to check)Skipped
+isort (python).......................................(no files to check)Skipped
+flake8...............................................(no files to check)Skipped
+[INFO] Restored changes from C:\Users\gvsan\.cache\pre-commit\patch1709069735-16816.
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   terminal.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+```
+gvsan@Gabriel MINGW64 ~/Documents/bootcamp/data-engineering-roadmap/black-isort-flake8 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   terminal.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+```
+gvsan@Gabriel MINGW64 ~/Documents/bootcamp/data-engineering-roadmap/black-isort-flake8 (main)
+$ git add .
+```
+```
+gvsan@Gabriel MINGW64 ~/Documents/bootcamp/data-engineering-roadmap/black-isort-flake8 (main)
+$ git commit -m 'terminal'
+trim trailing whitespace.................................................Passed
+fix end of files.........................................................Failed
+- hook id: end-of-file-fixer
+- exit code: 1
+- files were modified by this hook
+
+Fixing terminal.md
+
+check yaml...........................................(no files to check)Skipped
+check toml...........................................(no files to check)Skipped
+detect private key.......................................................Passed
+check for added large files..............................................Passed
+black................................................(no files to check)Skipped
+isort (python).......................................(no files to check)Skipped
+flake8...............................................(no files to check)Skipped
+```
+```
+gvsan@Gabriel MINGW64 ~/Documents/bootcamp/data-engineering-roadmap/black-isort-flake8 (main)
+$ git push
+Everything up-to-date
+```
